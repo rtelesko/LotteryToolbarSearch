@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
             }
         });
+        // TextView Message about "No results"
         lvPlayers.setEmptyView(tvNoResults);
     }
 
@@ -57,11 +58,14 @@ public class MainActivity extends AppCompatActivity {
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                // This method can be used when a query is submitted e.g.
+                // creating search history using SQLite DB
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                // Called when the query text is changed by the user
                 adapter.getFilter().filter(newText);
                 return true;
             }

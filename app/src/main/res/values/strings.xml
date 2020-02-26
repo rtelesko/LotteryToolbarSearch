@@ -2,7 +2,7 @@
     <string name="app_name">Lottery ToolbarSearch</string>
     <string name="noresults">No results</string>
     <string-array name="players">
-        <item>Jon Doe</item>
+        <item>John Doe</item>
         <item>Joe Biden</item>
         <item>Donald Trump</item>
         <item>Jeff Bridges</item>
